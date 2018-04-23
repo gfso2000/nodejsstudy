@@ -1,0 +1,16 @@
+{
+	"name": "HelloWorldWeb",
+	"description": "desc",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"async": "latest",
+		"express": "^4.12.0",
+		"hdb": "latest",
+		"opn": "latest",
+		"websocket": "latest"
+	},
+	"engines": {
+		"node": ">=0.10.x"
+	}
+}
