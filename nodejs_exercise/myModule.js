@@ -45,5 +45,18 @@ module.exports = {
 			})
 		});
 		//cb();
+	},
+	callD_alembert: function(req, res){
+		var spawn = require("child_process").spawn;
+		var process = spawn('python', ["./test.py",
+			11111,//req.query.funds, // starting funds
+			1,//req.query.size, // (initial) wager size
+			1,//req.query.count, // wager count — number of wagers per sim
+			1,//req.query.sims // number of simulations
+		]);
+		process.stdout.on('data', function (data) {
+			res.send(data.toString());
+		});
+		
 	}
 }

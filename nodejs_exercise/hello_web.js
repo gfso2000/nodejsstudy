@@ -35,6 +35,11 @@ app.route('/callHANA')
 	.get(function(req, res){
 		res.send(myModule.callHANA());
 	});
+app.route('/dalembert')
+    .get(function(req, res){
+        //res.send(myModule.callD_alembert(req, res));
+        myModule.callD_alembert(req, res);
+    });
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -68,7 +73,8 @@ colors.sort(function(a,b) { return Math.random() > 0.5; } );
 // start the server
 var server = app.listen(PORT, function(){
 	console.log('Server running');
-	opn('http://127.0.0.1:3000/chat.html');
+	//opn('http://127.0.0.1:3000/chat.html');
+    opn('http://127.0.0.1:3000/dalembert');
 });
 
 
