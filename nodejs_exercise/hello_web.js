@@ -74,7 +74,7 @@ colors.sort(function(a,b) { return Math.random() > 0.5; } );
 var server = app.listen(PORT, function(){
 	console.log('Server running');
 	//opn('http://127.0.0.1:3000/chat.html');
-    opn('http://127.0.0.1:3000/dalembert');
+    //opn('http://127.0.0.1:3000/dalembert');
 });
 
 
